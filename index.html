@@ -3,18 +3,21 @@
 <head>
   <title>Leefus Clicker</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Supabase JS Library -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 </head>
 <body>
 
 <h1>Leefus Clicker</h1>
 
-<!-- Login / Signup -->
+<!-- Login / Signup Form -->
 <div id="loginDiv">
-  <input type="email" id="email" placeholder="Email"><br>
-  <input type="password" id="password" placeholder="Password"><br>
-  <button id="signupBtn">Sign Up</button>
-  <button id="loginBtn">Login</button>
+  <form id="loginForm">
+    <input type="email" id="email" placeholder="Email" autocomplete="email" required><br>
+    <input type="password" id="password" placeholder="Password" autocomplete="current-password" required><br>
+    <button type="button" id="signupBtn">Sign Up</button>
+    <button type="button" id="loginBtn">Login</button>
+  </form>
 </div>
 
 <!-- Game -->
@@ -22,15 +25,20 @@
   <span id="userInfo"></span>
   <button id="logoutBtn">Logout</button>
   <div>Points: <span id="points">0</span></div>
+  
+  <!-- Clicker Button -->
   <button id="leefusBtn">LEEFUS</button>
 
+  <!-- Upgrades -->
   <h2>Upgrades</h2>
   <div id="upgradeContainer"></div>
 
+  <!-- Leaderboard -->
   <h2>Leaderboard</h2>
   <ol id="leaderboardList"></ol>
 </div>
 
+<!-- Script -->
 <script src="script.js"></script>
 </body>
 </html>
