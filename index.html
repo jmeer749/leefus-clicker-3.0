@@ -10,14 +10,14 @@
 
 <h1>Leefus Clicker</h1>
 
-<!-- Login / Signup Form -->
+<!-- Login / Signup -->
 <div id="loginDiv">
-  <form id="loginForm">
+  <div id="loginForm">
     <input type="email" id="email" placeholder="Email" autocomplete="email" required><br>
     <input type="password" id="password" placeholder="Password" autocomplete="current-password" required><br>
     <button type="button" id="signupBtn">Sign Up</button>
     <button type="button" id="loginBtn">Login</button>
-  </form>
+  </div>
 </div>
 
 <!-- Game -->
@@ -25,7 +25,7 @@
   <span id="userInfo"></span>
   <button id="logoutBtn">Logout</button>
   <div>Points: <span id="points">0</span></div>
-  
+
   <!-- Clicker Button -->
   <button id="leefusBtn">LEEFUS</button>
 
@@ -40,5 +40,12 @@
 
 <!-- Script -->
 <script src="script.js"></script>
+<script>
+  // Prevent default form behavior in case user presses Enter
+  document.getElementById("loginForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+  });
+</script>
+
 </body>
 </html>
