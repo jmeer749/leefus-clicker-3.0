@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leefus Clicker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+
+<h1>Leefus Clicker</h1>
+
+<!-- Login / Signup -->
+<div id="loginDiv">
+  <input type="email" id="email" placeholder="Email"><br>
+  <input type="password" id="password" placeholder="Password"><br>
+  <button id="signupBtn">Sign Up</button>
+  <button id="loginBtn">Login</button>
+</div>
+
+<!-- Game -->
+<div id="gameDiv" style="display:none;">
+  <span id="userInfo"></span>
+  <button id="logoutBtn">Logout</button>
+  <div>Points: <span id="points">0</span></div>
+  <button id="leefusBtn">LEEFUS</button>
+
+  <h2>Upgrades</h2>
+  <div id="upgradeContainer"></div>
+
+  <h2>Leaderboard</h2>
+  <ol id="leaderboardList"></ol>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
